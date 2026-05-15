@@ -1,4 +1,4 @@
-# $\pi^2$: Structure-Originated Reasoning Data Improves Long-Context Reasoning Ability of Large Language Models
+# $\pi^2$: Structure-based Reasoning Data Improves Long-Context Reasoning Ability of Large Language Models
 
 ![$\pi^2$](./media/2.jpeg)
 
@@ -13,8 +13,8 @@ We introduce $\pi^2$ (in plain text, Pi^2), a pipeline that 1) transforms Wikipe
 
 ➡️ Key takeaways:
 - Fine-tuning with 1k generated reasoning traces yields consistent improvements across 4 long-context benchmarks + our new $\pi^2$-Bench (`gpt-oss-20b`: +4.3% avg gain; `Qwen3-4B-Instruct`: +2.7% avg gain)
-- Fine-tuned models are competitive with proprietary and larger models
 - Self-distillation works: `gpt-oss-20b` improves +4.4% using its own reasoning traces
+- Back Translation is an important piece of our data pipeline, as it exposes the model to a broader spectrum of reasoning patterns than that of the alternative Rejection Sampling.
 
 
 ## Setup environment
