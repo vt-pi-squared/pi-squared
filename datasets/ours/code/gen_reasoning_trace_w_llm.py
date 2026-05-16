@@ -41,7 +41,7 @@ def generate_reasoning_traces(args):
                 print(f"\t[DEBUG] Generated reasoning trace:\n{response}")
                 print(f"\t[DEBUG] Finish processing the first sample, exiting due to debug mode.")
                 break
-        except:
+        except Exception as e:
             pass
     fout.close()
 

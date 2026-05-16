@@ -549,7 +549,7 @@ def main(args):
             print(f"Error processing item {item.get('table_id')}, skipping")
             continue
     print(f"\nSuccessfully processed {len(processed_data)}/{n_samples} items")
-    f.close()
+    fout.close()
     
     # Step 3: Save a sample as markdown for inspection
     if processed_data:

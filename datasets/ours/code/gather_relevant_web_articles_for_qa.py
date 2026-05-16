@@ -57,7 +57,7 @@ def openserp_search(query, count=10, host="http://localhost:7000", engines="goog
     resp = requests.get(url, params=params, timeout=10)
     resp.raise_for_status()
     search_results = resp.json()
-    return search_results
+    return search_results["results"]
 
 
 def search(query, count=10):
